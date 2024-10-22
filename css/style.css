@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  background-color: #E5E5E5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* header start */
+
+.header {
+  height: 100px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #FFFFFF;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+}
+
+.header__logo-img {
+  width: 225px;
+  height: 72px;
+}
+
+.header__nav {
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-item:not(:last-child) {
+  margin-right: 85px;
+}
+
+.header__nav-link {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.header__nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  transition: width 0.5s;
+}
+
+.header__nav-link:hover::after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 3px;
+  background-color: #FF9900;
+  transition: width 0.5s;
+}
+
+.header__nav-link:focus-visible {
+  outline: none;
+  border: #FF9900 solid 3px;
+}
+
+.header__nav-link:active {
+  color: #E1670E;
+  border-bottom: #E1670E solid 3px;
+}
+
+.header__search {
+  position: relative;
+}
+
+.header__search-icon {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.header__search-img {
+  width: 24px;
+  height: 24px;
+}
+
+.header__search-bar {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -110px;
+  border-radius: 24px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.header__search-input {
+  border: none;
+  border-bottom: 1px solid #CACACA;
+  font-size: 18px;
+  font-weight: 500;
+  outline: none;
+}
+
+.header__search-clear {
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.header__search-clear-img {
+  width: 24px;
+  height: 24px;
+}
+
+.header__search-bar.active {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: -10px;
+  right: -150px;
+}
+
+/* header end */
+
+/* hero start */
+
+.swiper {
+  width: 1170px;
+  height: 620px;
+}

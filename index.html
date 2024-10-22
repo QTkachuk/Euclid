@@ -4,8 +4,135 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Евклид - проектные системы</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link type="image/x-icon" href="/img/favicon.svg" rel="shortcut icon" />
     <link type="Image/x-icon" href="/img/favicon.svg" rel="icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="header__logo">
+          <img
+            src="/img/header__logo.png"
+            alt="Евклид - проектные системы"
+            class="header__logo-img"
+          />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">О нас</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Проекты</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Этапы</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Отзывы</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__search">
+          <button class="header__search-icon" id="search-icon">
+            <img
+              src="/img/header__search.svg"
+              alt="Поиск"
+              class="header__search-img"
+            />
+          </button>
+
+          <div class="header__search-bar" id="search-bar">
+            <input
+              type="text"
+              placeholder="Что будем искать?"
+              class="header__search-input"
+            />
+            <button class="header__search-icon" id="search-icon">
+              <img
+                src="/img/header__search.svg"
+                alt="Поиск"
+                class="header__search-img"
+              />
+            </button>
+            <button class="header__search-clear">
+              <img
+                src="/img/closed_search.svg"
+                alt="Кнопка закрытия"
+                class="header__search-clear-img"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hero start -->
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  src="/img/low-angle-photo-of-balconies-2462015 1.png"
+                  alt="Балкон"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  src="/img/hero-pic-1920-2.png"
+                  alt="Стекла"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper-slide-img"
+                  src="/img/hero-pic-1920-3.png"
+                  alt="Дома"
+                />
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- hero end -->
+
+    <script src="/js/main.js"></script>
+  </body>
 </html>
