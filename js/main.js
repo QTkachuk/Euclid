@@ -9,13 +9,17 @@ searchIcon.addEventListener("click", () => {
 // swiper
 
 const swiper = new Swiper('.swiper', {
+  autoplay: {
+    delay: 4000,
+   },
   // Optional parameters
-  direction: 'vertical',
+  // direction: 'vertical',
   loop: true,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows
@@ -25,7 +29,7 @@ const swiper = new Swiper('.swiper', {
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
 });
