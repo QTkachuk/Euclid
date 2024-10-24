@@ -43,6 +43,24 @@ ul {
   color: #FFFFFF;
   background-color: #FF9900;
   cursor: pointer;
+  transition: all .5s;
+  outline: none;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: #FFB84D;
+}
+
+.button:active {
+  background-color: #E1670E;
+  transition: all .0s;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: normal;
+  margin: 0;
 }
 
 /* header start */
@@ -221,14 +239,106 @@ ul {
 }
 
 .swiper {
-  /* width: 1200px;
-  height: 620px; */
   width: 100%;
-  max-width: 1770px;
   height: auto;
 }
 
 .swiper-slide-img {
   width: 100%;
   height: 100%;
+}
+
+/* hero end */
+
+/* about start */
+
+.about {
+  width: 1770px;
+}
+
+.about__container {
+  margin-left: 75px;
+  width: 1770px;
+}
+
+.about__heading {
+  margin-bottom: 20px;
+}
+
+.about__description {
+  width: 1235px;
+  margin-bottom: 50px;
+  line-height: 32px;
+}
+
+.about__cards {
+  display: flex;
+}
+
+.about__card-main {
+  width: 868px;
+  height: 622px;
+  position: relative;
+  margin-right: 52px;
+  background-image: url(/img/Rectangle.png);
+}
+
+.about__card-main-info {
+  width: 100%;
+  height: 196px;
+  position: absolute;
+  border-radius: 32px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about__card-main-text {
+  width: 433px;
+  height: 96px;
+  margin: 0;
+  margin-right: 160px;
+  margin-top: 50px;
+  margin-left: 50px;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.about__card-main-link {
+  position: absolute;
+  bottom: 68px;
+  right: 50px;
+  padding: 20px 38px;
+  border: #FF9900 3px solid;
+  border-radius: 16px;
+  color: #FFFFFF;
+  font-weight: 700;
+  transition: all 0.5s;
+  outline: none;
+}
+
+.about__card-main-link:hover,
+.about__card-main-link:focus-visible {
+  background-color: #FF9900;
+}
+
+.about__card-main-link:active {
+  background-color: #E1670E;
+  border: #E1670E 3px solid;
+}
+
+.about__card {
+  max-width: 870px;
+  height: 295px;
+  display: flex;
+  border: #CACACA 1px solid;
+  border-radius: 32px;
+}
+
+.about__card-img {
+}
+
+.about__card-heading {
+}
+.about__card-text {
 }
